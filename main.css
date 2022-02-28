@@ -1,0 +1,380 @@
+*, *:before, *:after{
+    box-sizing: inherit;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  body {
+    background-color: rgba(236, 236, 236, 1);
+    
+  }
+  
+  header{
+    position: fixed;
+    background-color: rgba(236, 236, 236, 1);
+    z-index: 99;
+    width: 100%;
+    padding: 0;
+    height: 60px;
+    top: 0;
+  }
+  
+  .nav-items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .nav-list {
+    list-style: none;
+   margin-right: 2em;
+  }  
+  
+  img {
+    height: 35px;
+    width: 315px; 
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-list:first-child {
+    margin-right: auto;
+    margin-left: 0.7em;
+  }
+  
+  svg {
+    fill: #FF8F00;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    width: 80px;
+    margin-left: 2em;
+    
+  }
+  
+  h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 3em;
+    font-size: 1.5rem; 
+    font-weight: 600;
+  }
+  
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-items {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-top: 0;  
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  input {
+    padding: 0.7em;
+  }
+  
+  #email {
+    width: 250px;
+  }
+  
+  #submit {
+    background-color: #FBC02D;
+    border-style: none;
+    font-weight: bold;
+    width: 150px;
+    margin-left: 3.5em;
+  }
+  
+  .feat-container {
+    display: flex;
+    flex-direction: column; 
+    
+  }
+  
+   .section {
+     display: flex;
+     justify-content: flex-start;
+     margin: .7em;
+     margin-bottom: 3em;
+  }
+  
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4em;
+  }
+  
+  h2 {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 300px;
+    margin: 0;
+  
+  }
+  
+  p {
+    font-size: 0.99rem;
+    display: flex;
+    flex-direction:row;
+    height: 30px;
+    margin: 0;
+    margin-top: 0.3em;
+    
+  }
+  
+  .vid-container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pricing-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      margin-top: 3.5em;
+    }
+    
+    .package {
+      border: 1px solid black;
+      height: 325px;
+      width: 300px;
+      margin-left: 1em;
+      margin-right: .5em;
+      margin-bottom: .5em;
+      
+    }
+    
+    .title {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #E0E0E0;
+      height: 50px;
+      width: 298px;
+      margin: 0;
+      padding-top: 1em;
+      font-weight: 600;  
+    }
+    
+    .price {
+      display: flex;
+      justify-content: space-evenly;
+      font-weight: 500;
+      font-size: 1.6rem;
+      padding-top: .3em;
+      padding-bottom: 1.7em;
+    }
+    
+    .package-button {
+    background-color: #FBC02D;
+    border-style: none;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 100px;
+    height: 40px;
+    margin-left: 6em;
+  }
+    
+    .price-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1em;
+    } 
+  
+  
+  
+  /* media queries mobile has no feature images */
+  
+  @media only screen and (max-width: 580px) {
+    
+    body{ 
+      width: 98%;
+    }
+    
+    header {   
+      position: fixed;
+      background-color: rgba(236, 236, 236, 1);
+      z-index: 99;
+      width: 98%;
+      padding: 0;
+      height: 140px;
+      margin: 0;
+      top: 0;
+    }
+    
+    img#header-img {
+        height: 35px;
+        width: 315px;
+        margin-left: 2em;
+    }
+    
+    nav{
+      width: 98%;
+    }
+    
+    
+    .nav-list {
+      margin-bottom: .5em;
+    }
+    
+    .nav-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 98%;
+    }
+    
+    
+  h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 8em;
+    font-size: 1.3rem; 
+    font-weight: 600;
+    padding-bottom: .5em;
+    width: 98%;
+  }
+  
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+  }
+  
+  .form-items {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-top: 0;  
+  }
+  
+    
+    .feat-container {
+      display: flex;
+      flex-direction: column; 
+      justify-content: center;
+      width: 95%; 
+      margin-top: 1em;
+      margin: 0;
+    }
+    
+    .section {
+      width: 95%;
+      margin-left: 0;
+    }
+    
+   .text-wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      margin-left: 2em;
+      width: 99%;
+    }
+    
+    svg  {
+      /*fill: #FF8F00;
+      display: flex;
+      justify-content: center;
+      height: 50px;
+      width: 150px;
+      margin: 0.5em;*/
+      display: none;
+    }
+      
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* height: 30px; */
+      /* width: 300px; */
+      margin: 0;
+    }
+    
+    .vid-container {
+     
+      width: 98%;
+      
+    }
+    
+         /* price box */
+    
+    .pricing-container {
+      display:flex;
+      flex-direction: column;
+      margin-top: 3.5em;
+      padding-left: 3em;
+    }
+    
+    .package {
+      border: 1px solid black;
+      height: 325px;
+      margin-left: 2em;
+      margin-right: 2em;
+      margin-bottom: 1em;
+    }
+    
+    .title {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #E0E0E0;
+      margin: 0;
+      padding-top: 1em;
+      padding-bottom: 1.9em;
+      font-weight: 600;
+    }
+    
+    .price {
+      display: flex;
+      justify-content: space-evenly;
+      font-weight: 500;
+      font-size: 1.6rem;
+  
+      padding-top: .3em;
+      padding-bottom: 1.7em;
+    }
+    
+    .package-button {
+    background-color: #FBC02D;
+    border-style: none;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 100px;
+    height: 40px;
+    margin-left: 6em;
+  }
+    
+    .price-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1em;
+    }
+    
+    
+  }
